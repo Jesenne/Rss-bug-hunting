@@ -34,8 +34,8 @@ body {
 
 .plans {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: stretch;
   gap: 0;
   max-width: 960px;
