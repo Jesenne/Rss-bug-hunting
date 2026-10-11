@@ -10,7 +10,13 @@ let tasks = [];
 let currentFilter = "all";
 let nextId = 1;
 
+function isEmpty(str){
+  if(str.trim()) return false;
+  return true;
+}
+
 function addTask() {
+  if (isEmpty(input.value)) return;
   const text = input.value;
   errorEl.hidden = true;
   tasks.push({ id: nextId++, text: text, done: false });
