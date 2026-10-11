@@ -10,8 +10,8 @@ let tasks = [];
 let currentFilter = "all";
 let nextId = 1;
 
-function isEmpty(str){
-  if(str.trim()) return false;
+function isEmpty(str) {
+  if (str.trim()) return false;
   return true;
 }
 
@@ -56,7 +56,7 @@ function render() {
     const li = document.createElement("li");
     li.className = "task";
     if (task.done) {
-      li.classList.add("completed");
+      li.classList.add("done");
     }
 
     const span = document.createElement("span");
