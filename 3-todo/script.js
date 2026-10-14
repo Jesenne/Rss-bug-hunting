@@ -16,7 +16,10 @@ function isEmpty(str) {
 }
 
 function addTask() {
-  if (isEmpty(input.value)) return;
+  if (isEmpty(input.value)) {
+    errorEl.hidden = false;
+    return;
+  }
   const text = input.value;
   errorEl.hidden = true;
   tasks.push({ id: nextId++, text: text, done: false });
